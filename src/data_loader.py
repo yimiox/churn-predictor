@@ -11,7 +11,7 @@ def load_and_preprocess(path=DATA_PATH):
 
     # Fix TotalCharges (has spaces as missing values)
     df["TotalCharges"] = pd.to_numeric(df["TotalCharges"], errors="coerce")
-    df["TotalCharges"].fillna(df["TotalCharges"].median(), inplace=True)
+    df["TotalCharges"] = df["TotalCharges"].fillna(df["TotalCharges"].median())
 
     # Drop customerID (not predictive)
     df.drop("customerID", axis=1, inplace=True)
