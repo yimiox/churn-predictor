@@ -3,7 +3,7 @@
 An end-to-end ML pipeline that predicts customer churn with full explainability.
 
 ## Live Demo
-[View on Streamlit Cloud](https://YOUR_APP_URL.streamlit.app)
+https://churn-predictor-e3xywtyfjjud7atrulkggx.streamlit.app/
 
 ## Features
 - **Random Forest classifier** trained on IBM Telco Churn dataset (AUC ~0.84)
